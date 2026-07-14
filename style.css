@@ -1,0 +1,447 @@
+h1{
+
+	color: blue;
+
+}
+
+
+
+.containers{
+
+	display: flex;
+
+	gap: 5px;
+
+	}
+
+
+
+.contain1{
+
+	width: 100px;
+
+	height: 100px;
+
+	background: green;
+
+	border-radius: 20px;
+
+
+
+}
+
+
+
+.contain2{
+
+	width: 100px;
+
+	height: 100px;
+
+	background: yellow;
+
+	border-radius: 20px;
+
+}
+
+
+
+.contain3{
+
+	width: 100px;
+
+	height: 100px;
+
+	background: orange;
+
+	border-radius: 20px;
+
+}
+
+
+
+.box:hover{
+
+	transition: transform 2s;
+
+	transform: rotateY(180deg);
+
+}
+
+
+
+.userinput {
+
+	margin-top: 50px;
+
+    	display: flex;
+
+	flex-wrap: wrap;
+
+   	width: clamp(250px, 60vw, 600px);
+
+    	gap: 10px;
+
+	justify-content: center;
+
+}
+
+
+
+.input {
+
+	text-align: center;
+
+	flex: 0.8;
+
+   
+
+}
+
+
+
+.loading{
+
+	width: 100%;
+
+	display: flex;
+
+ 	justify-content: center;
+
+    	align-items: center;
+
+	height: 100px;
+
+	gap: 6px;	
+
+}
+
+
+
+
+
+.loading span{
+
+	width: 10px;
+
+	height: 60px;
+
+	background: #FFEFE3;
+
+	animation: scale 0.9s ease-in-out infinite;
+
+	border-radius: 20px;
+
+}
+
+
+
+.loading span:nth-child(2){
+
+	background: #99C2FF;
+
+	animation-delay: -0.8s;
+
+}
+
+
+
+.loading span:nth-child(3){
+
+	background: #FFDF82;
+
+	animation-delay: -0.7s;
+
+}
+
+
+
+.loading span:nth-child(4){
+
+	background: #FF84BA;
+
+	animation-delay: -0.6s;
+
+}
+
+.loading span:nth-child(5){
+
+	background: #FFEFE3;
+
+	animation-delay: -0.5s;
+
+}
+
+
+
+
+
+@keyframes scale{
+
+	0%, 40%, 100%{
+
+		transform: scaleY(0.05)
+
+	}
+
+	20%{
+
+		transform: scaleY(1)
+
+	}
+
+}
+
+
+
+
+
+.listen {
+
+	margin-top: 10px;
+
+	height: 50px;
+
+	width: 100%;
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	}
+
+
+
+.searchme{
+
+	width: clamp(200px, 50vw, 300px);
+
+	height: 30px;
+
+	background: #EEEEEE;
+
+	border: 1px solid #d9d9d9;
+
+	border-radius: 20px;
+
+	text-align: center;
+
+ 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+
+
+}
+
+
+
+.imlistening {
+
+	font-family: 'Yuyu', sans-serif;
+
+	font-size: 1.5em;
+
+	margin-top: 10px;
+
+	margin-bottom: 10px;
+
+  	display: flex;
+
+  	align-items: center;
+
+  	justify-content: center;
+
+}
+
+
+
+
+
+.hello{
+
+	margin: 30px;
+
+	display: flex;
+
+	justify-content: center;
+
+	font-family: 'Yuyu', sans-serif;
+
+  	font-weight: 400;
+
+	font-size: 5em;
+
+	margin-bottom:8px;
+
+  	font-style: normal;}
+
+
+
+
+
+@font-face {
+
+    	font-family: 'Yuyu';
+
+    	src: url('./fonts/yuyu/Yuyu-Regular.ttf') 	format("truetype"),
+
+    	font-weight: 400;
+
+    	font-style: normal;
+
+    	font-display: swap;
+
+}
+
+
+
+.menu{
+
+	list-style-type: none;
+
+	font-family: 'Yuyu';
+
+	font-size: 1.5em;
+
+	display: flex;
+
+	align-items: center;
+
+  	justify-content: center;
+
+	gap: 100px;
+
+	margin: 0px;
+
+	padding: 0px;
+
+ 	position: sticky;
+
+  	top: 0;
+
+	font-weight: bold;
+
+	background-color: rgb(187, 213, 218);
+
+	}
+
+
+
+.menu li a {
+
+	position:relative;
+
+ 	 display: block;
+
+  	color: #F5F5F5;
+
+  	text-align: center;
+
+ 	 padding: 14px 16px;
+
+  	text-decoration: none;
+
+}
+
+
+
+.dinobirth {
+
+    	position: absolute;
+
+	width: 100px;
+
+    	height: auto;
+
+    	left: 200px;
+
+    	top: 10px;
+
+    	opacity: 0;
+
+    	transition: left 1.5s ease, opacity 0.3s;
+
+}
+
+
+
+.dinorun {
+
+    	position: absolute;
+
+	width: 40px;
+
+    	height: auto;
+
+    	left: 200px;
+
+    	top: 10px;
+
+    	opacity: 0;
+
+    	transition: left 1.5s ease, opacity 0.3s;
+
+}
+
+
+
+.menu li {
+
+	position: relative;}
+
+
+
+.menuitem:hover .dinobirth {
+
+    opacity: 1;
+
+    left: 80px;
+
+}
+
+
+
+.contactitem:hover .dinorun {
+
+    opacity: 1;
+
+    left: 80px;
+
+}
+
+
+
+
+
+h2{
+
+	font-family: 'Yuyu';
+
+	font-size: 2em;
+
+	display: flex;
+
+	margin: 10px 30px;
+
+  	justify-content: center;
+
+	color: #547A95;
+
+}
+
+
+
+.dinoimages {
+
+margin-top: 40px;
+
+	display: flex;
+
+	justify-content: center;
+
+}
+
+
+
+.dinobirthmain{width: 400px;}
