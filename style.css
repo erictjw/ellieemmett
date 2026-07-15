@@ -445,3 +445,84 @@ margin-top: 40px;
 
 
 .dinobirthmain{width: 400px;}
+
+
+.race{
+	
+	display: flex;
+	justify-content: center;}
+
+.track{
+position: relative;
+	margin-top: 20px;
+	width: 200px;
+	height: 50px;
+	border-radius: 40px;
+	background-color:#BBF1D2;
+	overflow: hidden;
+}
+
+.movingtrack{
+	position: absolute;
+	left: 280px;
+	top: 50%;
+	width: 200px;	
+	height: auto;
+transform: translateY(-50px);
+ animation: movingtrackback 5s linear infinite alternate;
+animation-delay: 3s;
+}
+
+
+@keyframes movingtrackback {
+    from {
+        left: 280px;
+        opacity: 1;
+    }
+
+    to {
+        left: -280px;
+        opacity: 1;
+    }
+}
+
+
+img.carrace{
+	position: absolute;
+	width: auto;	
+	height: 30px;
+	top: 50%;
+	left: -60px;             /* Start outside the track */
+    	transform: translateY(-50%);
+opacity: 1;
+ animation: driveForward 2s forwards;
+}
+
+@keyframes driveForward {
+    from {
+        left: -80px;
+        opacity: 1;
+    }
+
+    to {
+        left: 280px;
+        opacity: 1;
+    }
+}
+
+.track:hover .carrace {
+    animation: driveBackward 4s forwards;
+}
+
+
+@keyframes driveBackward {
+    from {
+        left: 220px;
+        opacity: 1;
+    }
+
+    to {
+        left: -120px;
+        opacity: 1;
+    }
+}
