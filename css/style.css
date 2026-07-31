@@ -1,11 +1,30 @@
+
+.ell_border {
+    border: 1px solid #ccc;
+     margin: 50px auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.dino_emm{
+    font-size: 2rem;
+}
+
 .emm_nav{
     color: #A6D0E4 !important;
 }
 
 .emm_photo{
-    height: 400px !important;
-    width: auto !important;
+  
+    width: 400px !important;
     margin: 0 auto !important; 
+    object-fit: cover;
+}
+
+.container_em{
+display: flex;
+flex-wrap: wrap;
+
 }
 
 .loading_emm{
